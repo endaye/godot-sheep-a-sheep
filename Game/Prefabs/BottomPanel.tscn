@@ -1,0 +1,84 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Game/Prefabs/MTile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Game/Scripts/BottomPanel.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Panel.png" type="Texture" id=3]
+[ext_resource path="res://Assets/refresh.png" type="Texture" id=4]
+[ext_resource path="res://Game/Scripts/Refresh.gd" type="Script" id=5]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Assets/文道油漆黑.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 100
+font_data = SubResource( 1 )
+
+[node name="BottomPanel" type="Node2D"]
+position = Vector2( 671.024, 550.684 )
+script = ExtResource( 2 )
+icon_array = [ NodePath("Tile_0"), NodePath("Tile_1"), NodePath("Tile_2"), NodePath("Tile_3"), NodePath("Tile_4"), NodePath("Tile_5"), NodePath("Tile_6") ]
+
+[node name="Panel" type="Sprite" parent="."]
+position = Vector2( -140.575, 5.7027 )
+scale = Vector2( 1.07646, 1 )
+texture = ExtResource( 3 )
+
+[node name="Tile_0" parent="." instance=ExtResource( 1 )]
+position = Vector2( -299.951, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Tile_1" parent="." instance=ExtResource( 1 )]
+position = Vector2( -248.145, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Tile_2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -194.217, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Tile_3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -140.194, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Tile_4" parent="." instance=ExtResource( 1 )]
+position = Vector2( -88.294, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Tile_5" parent="." instance=ExtResource( 1 )]
+position = Vector2( -33.818, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Tile_6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 21.326, 5 )
+is_on_top = true
+is_clickable = false
+is_on_table = false
+
+[node name="Refresh" type="Sprite" parent="."]
+position = Vector2( 215.44, -15.1519 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
+script = ExtResource( 5 )
+
+[node name="Label" type="Label" parent="Refresh"]
+margin_left = 254.272
+margin_top = -84.7566
+margin_right = 654.272
+margin_bottom = 115.243
+custom_fonts/font = SubResource( 2 )
+text = "0"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

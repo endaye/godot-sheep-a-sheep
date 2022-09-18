@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Reference",
+"class": "Constants",
+"language": "GDScript",
+"path": "res://Game/Scripts/Constants.gd"
+}, {
+"base": "Reference",
+"class": "FileReader",
+"language": "GDScript",
+"path": "res://Game/Scripts/FileReader.gd"
+}, {
+"base": "Node2D",
+"class": "MContainerBase",
+"language": "GDScript",
+"path": "res://Game/Scripts/MContainerBase.gd"
+}, {
+"base": "Node2D",
+"class": "MTile",
+"language": "GDScript",
+"path": "res://Game/Scripts/MTile.gd"
+} ]
+_global_script_class_icons={
+"Constants": "",
+"FileReader": "",
+"MContainerBase": "",
+"MTile": ""
+}
+
+[application]
+
+config/name="Sheep A Sheep"
+run/main_scene="res://Game/Game.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/resizable=false
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Game/Scripts/MContainer_1_C_1.gd" type="Script" id=2]
+
+[node name="Container_1_C_1" type="Node2D"]
+script = ExtResource( 2 )
+offset_x = 0
+offset_y = 5
+extra_offset_x = 0
+extra_offset_y = 0
+size_x = 1
+size_y = 1
+size_z = 5
